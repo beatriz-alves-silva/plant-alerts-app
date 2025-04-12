@@ -40,9 +40,7 @@ O usuário pode desativar as notificações para plantas individuais diretamente
 
 ## Protótipos de Tela
 Visualização geral das telas do aplicativo:
-
-<img src="![prototipo](https://github.com/user-attachments/assets/bed5d0b6-7d66-4229-a235-bb468f8f65a0)" width="100%" alt="Protótipo do app">
-
+![prototipo](https://github.com/user-attachments/assets/bda9b980-6598-4a28-acc5-0d0ce0d209df)
 
 Você pode visualizar os protótipos das telas do aplicativo no Figma pelo link abaixo:
 
