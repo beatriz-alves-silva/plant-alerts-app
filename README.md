@@ -47,6 +47,7 @@ Você pode visualizar os protótipos das telas do aplicativo no Figma pelo link 
 🔗 [Acessar protótipos no Figma](https://www.figma.com/proto/B4m8SvDlX1qFP5UjzbWzmG/Plant-Alerts-App?node-id=31-22&p=f&t=1eww5TX0ICyZ5NoO-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1)
 
 ## 🗃️ Modelagem do banco
+![Modelagem do banco de dados](https://github.com/user-attachments/assets/a1ca3fce-3990-4ab3-85a3-e821f174ef33)
 
 ## 🗓️ Planejamento de Sprints
 
@@ -54,64 +55,64 @@ Você pode visualizar os protótipos das telas do aplicativo no Figma pelo link 
 - [x] Definir qual será o app
 - [x] Definir as funcionalidades
 
-### Semana 2 (06/04 a 12/04)
+### ~~Semana 2 (06/04 a 12/04)~~
 - [x] Criar protótipo
-- Fazer a modelagem do banco de dados
+- [x] Fazer a modelagem do banco de dados
 - [x] Criar o repositório
 
-### Semana 3 (13/04 a 19/04) - Checkpoint 1
-- Verificar requisitos do checkpoint
-- Ajustes
-- [ ] Checkpoint 1
+### ~~Semana 3 (13/04 a 19/04) - Checkpoint 1~~
+- [x] Verificar requisitos do checkpoint
+- [x] Ajustes
+- [x] Checkpoint 1
 
 ### Semana 4 (20/04 a 26/04)
-- Configurar o roteamento com Expo Router
-- Criar tela
-- Criar componente personalizado
+- [ ] Configurar o roteamento com Expo Router
+- [ ] Criar tela
+- [ ] Criar componente personalizado
 
 ### Semana 5 (27/04 a 03/05)
-- Criar tela
-- Criar componente personalizado
+- [ ] Criar tela
+- [ ] Criar componente personalizado
 
 ### Semana 6 (04/05 a 10/05)
-- Criar tela
-- Garantir que todas as telas estejam populadas
-- Garantir navegação entre as telas criadas (pelo menos 3)
+- [ ] Criar tela
+- [ ] Garantir que todas as telas estejam populadas
+- [ ] Garantir navegação entre as telas criadas (pelo menos 3)
 
 ### Semana 7 (11/05 a 17/05)
-- Ter pelo menos 2 componentes personalizados
-- Gravar vídeo mostrando a navegação
-- Organizar o repositório
-- Implementar cadastro e login de usuário
+- [ ] Ter pelo menos 2 componentes personalizados
+- [ ] Gravar vídeo mostrando a navegação
+- [ ] Organizar o repositório
+- [ ] Implementar cadastro e login de usuário
 
 ### Semana 8 (18/05 a 24/05) - Checkpoint 2
-- Verificar requisitos do checkpoint
-- Ajustes
+- [ ] Verificar requisitos do checkpoint
+- [ ] Ajustes
 - [ ] Checkpoint 2
 
 ### Semana 9 (25/05 a 31/05)
-- Implementar cadastro de plantas
-- Criar restante das telas
+- [ ] Implementar cadastro de plantas
+- [ ] Criar restante das telas
 
 ### Semana 10 (01/06 a 07/06)
-- Implementar sistema de notificações
-- Adicionar controle de ativar/desativar notificações por planta
+- [ ] Implementar sistema de notificações
+- [ ] Adicionar controle de ativar/desativar notificações por planta
 
 ### Semana 11 (08/06 a 14/06)
-- Melhorar a experiência de uso (UI/UX)
-- Verificar implementação de funcionalidades extras
-- Testar o app completo em diferentes fluxo
+- [ ] Melhorar a experiência de uso (UI/UX)
+- [ ] Verificar implementação de funcionalidades extras
+- [ ] Testar o app completo em diferentes fluxo
 
 ### Semana 12 (15/06 a 21/06)
-- Refatorar código e melhorar organização
-- Ajustes finais
-- Testes finais
+- [ ] Refatorar código e melhorar organização
+- [ ] Ajustes finais
+- [ ] Testes finais
 
 ### Semana 13 (22/06 a 28/06)
-- Criar APK
-- Gravar vídeo de defesa
+- [ ] Criar APK
+- [ ] Gravar vídeo de defesa
 
 ### Semana 14 (29/06 a 05/07) - Checkpoint final
-- Verificar requisitos do checkpoint
-- Ajustes
+- [ ] Verificar requisitos do checkpoint
+- [ ] Ajustes
 - [ ] Checkpoint final
