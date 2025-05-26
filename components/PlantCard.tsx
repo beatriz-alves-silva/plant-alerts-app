@@ -4,20 +4,25 @@ import { useRouter } from 'expo-router';
 import { Feather } from '@expo/vector-icons';
 
 interface PlantCardProps {
+    id: string;
     name: string;
     nextNotification: string;
     imageSource: any;
+    imageKey: string;
     }
 
-    const PlantCard: React.FC<PlantCardProps> = ({ name, nextNotification, imageSource }) => {
+    const PlantCard: React.FC<PlantCardProps> = ({ id, name, nextNotification, imageSource, imageKey }) => {
         const router = useRouter();
 
         const handleCardPress = () => {
-            console.log('Card pressionado:', name);
-            router.push({ 
-            pathname: '../app/DetalhePlanta.tsx', 
-            params: { plantName: name, plantImageUri: typeof imageSource === 'object' && imageSource.uri ? imageSource.uri : undefined } 
-            });
+            router.push({
+            pathname: '/DetalhePlanta',
+            params: {
+                plantId: id,
+                plantName: name,
+                plantImageKey: imageKey
+            }
+        });
         };
 
         return (

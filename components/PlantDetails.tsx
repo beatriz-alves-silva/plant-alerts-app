@@ -1,12 +1,12 @@
 import React from 'react';
 import { View, Text, Image, StyleSheet, ImageSourcePropType } from 'react-native';
 
-interface PlantDetailDisplayProps {
+interface PlantDetailsProps {
     name: string | undefined; 
     imageSource: ImageSourcePropType | undefined; 
 }
 
-const PlantDetailDisplay: React.FC<PlantDetailDisplayProps> = ({ name, imageSource }) => {
+const PlantDetails: React.FC<PlantDetailsProps> = ({ name, imageSource }) => {
     if (!name || !imageSource) {
         return (
         <View style={styles.container}>
@@ -29,20 +29,20 @@ const PlantDetailDisplay: React.FC<PlantDetailDisplayProps> = ({ name, imageSour
         alignItems: 'center',
         justifyContent: 'flex-start',
         padding: 20,
-        backgroundColor: '#F0E68C', 
+        backgroundColor: '#606C38', 
     },
     plantImage: {
         width: 250,
         height: 250,
-        borderRadius: 125, 
+        borderRadius: 15, 
         marginBottom: 20,
         borderWidth: 3,
-        borderColor: '#606C38',
+        borderColor: '#DDA15E',
     },
     plantName: {
         fontSize: 28,
         fontWeight: 'bold',
-        color: '#283618',
+        color: '#FEFAE0',
         textAlign: 'center',
     },
     errorText: {
@@ -51,4 +51,4 @@ const PlantDetailDisplay: React.FC<PlantDetailDisplayProps> = ({ name, imageSour
     }
 });
 
-export default PlantDetailDisplay;
+export default PlantDetails;
