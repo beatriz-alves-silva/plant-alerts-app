@@ -57,7 +57,7 @@ Você pode visualizar os protótipos das telas do aplicativo no Figma pelo link 
 
 ### ~~Semana 2 (06/04 a 12/04)~~
 - [x] Criar protótipo
-- [x] Fazer a modelagem do banco de dados
+- [ ] Fazer a modelagem do banco de dados
 - [x] Criar o repositório
 
 ### ~~Semana 3 (13/04 a 19/04) - Checkpoint 1~~
