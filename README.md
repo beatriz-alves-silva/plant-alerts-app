@@ -116,3 +116,39 @@ Você pode visualizar os protótipos das telas do aplicativo no Figma pelo link 
 - [ ] Verificar requisitos do checkpoint
 - [ ] Ajustes
 - [ ] Checkpoint final
+
+## Rodando o Projeto
+
+Siga os passos abaixo para configurar e executar o projeto localmente.
+
+### Passos para Instalação e Execução
+
+1.  **Clone o repositório:**
+    ```bash
+    git clone [https://github.com/beatriz-alves-silva/plant-alerts-app.git](https://github.com/beatriz-alves-silva/plant-alerts-app.git)
+    ```
+    *(Se você já tem o projeto clonado, pule esta etapa e apenas navegue até o diretório do projeto)*
+
+2.  **Navegue até o diretório do projeto:**
+    ```bash
+    cd plant-alerts-app
+    ```
+
+3.  **Instale as dependências:**
+    O projeto utiliza NPM. Execute:
+    ```bash
+    npm install
+    ```
+    *(Se você preferir usar Yarn, pode usar `yarn install`)*
+
+4.  **Execute o aplicativo:**
+    ```bash
+    npx expo start
+    ```
+
+5.  Após o comando `npx expo start`, um QR Code aparecerá no terminal.
+    * **Para rodar no seu celular:** Abra o aplicativo Expo Go (disponível para [Android](https://play.google.com/store/apps/details?id=host.exp.exponent) e [iOS](https://apps.apple.com/us/app/expo-go/id982107779)) e escaneie o QR Code.
+    * **Para rodar no emulador/simulador:**
+        * Pressione `a` no terminal para abrir no emulador Android (requer Android Studio configurado).
+        * Pressione `i` no terminal para abrir no simulador iOS (requer Xcode e macOS).
+        * Pressione `w` no terminal para abrir a versão web no navegador.
