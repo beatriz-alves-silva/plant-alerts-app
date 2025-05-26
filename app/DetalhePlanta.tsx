@@ -17,7 +17,6 @@ export default function DetalhePlanta() {
     const params = useLocalSearchParams<{ plantName?: string; plantImageKey?: string }>();
     const plantName = params.plantName;
     const imageSource = getPlantImageByKey(params.plantImageKey);
-
     const screenTitle = plantName || 'Detalhes da Planta';
 
     return (

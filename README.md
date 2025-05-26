@@ -65,34 +65,34 @@ Você pode visualizar os protótipos das telas do aplicativo no Figma pelo link 
 - [x] Ajustes
 - [x] Checkpoint 1
 
-### Semana 4 (20/04 a 26/04)
-- [ ] Configurar o roteamento com Expo Router
-- [ ] Criar tela
-- [ ] Criar componente personalizado
+### ~~Semana 4 (20/04 a 26/04)~~
+- [x] Configurar o roteamento com Expo Router
+- [x] Criar tela
+- [x] Criar componente personalizado
 
-### Semana 5 (27/04 a 03/05)
-- [ ] Criar tela
-- [ ] Criar componente personalizado
+### ~~Semana 5 (27/04 a 03/05)~~
+- [x] Criar tela
+- [x] Criar componente personalizado
 
-### Semana 6 (04/05 a 10/05)
-- [ ] Criar tela
-- [ ] Garantir que todas as telas estejam populadas
-- [ ] Garantir navegação entre as telas criadas (pelo menos 3)
+### ~~Semana 6 (04/05 a 10/05)~~
+- [x] Criar tela
+- [x] Garantir que todas as telas estejam populadas
+- [x] Garantir navegação entre as telas criadas (pelo menos 3)
 
-### Semana 7 (11/05 a 17/05)
-- [ ] Ter pelo menos 2 componentes personalizados
-- [ ] Gravar vídeo mostrando a navegação
-- [ ] Organizar o repositório
-- [ ] Implementar cadastro e login de usuário
+### ~~Semana 7 (11/05 a 17/05)~~
+- [x] Ter pelo menos 2 componentes personalizados
+- [x] Gravar vídeo mostrando a navegação
+- [x] Organizar o repositório
 
-### Semana 8 (18/05 a 24/05) - Checkpoint 2
-- [ ] Verificar requisitos do checkpoint
-- [ ] Ajustes
-- [ ] Checkpoint 2
+### ~~Semana 8 (18/05 a 24/05) - Checkpoint 2~~
+- [x] Verificar requisitos do checkpoint
+- [x] Checkpoint 2
 
 ### Semana 9 (25/05 a 31/05)
+- [ ] Implementar cadastro e login de usuário
 - [ ] Implementar cadastro de plantas
 - [ ] Criar restante das telas
+- [ ] Ajustes
 
 ### Semana 10 (01/06 a 07/06)
 - [ ] Implementar sistema de notificações
@@ -152,3 +152,31 @@ Siga os passos abaixo para configurar e executar o projeto localmente.
         * Pressione `a` no terminal para abrir no emulador Android (requer Android Studio configurado).
         * Pressione `i` no terminal para abrir no simulador iOS (requer Xcode e macOS).
         * Pressione `w` no terminal para abrir a versão web no navegador.
+
+## Atualizações desde o último checkpoint
+
+Nesta etapa foi feita a configuração da estrutura base do aplicativo, no sistema de navegação incial e na criação dos primeiros componentes e telas. O próximo passo será implementar o cadastro de usuários e plantas (no momento é possível somente fazer a navegação entre as telas, sem autenticação, cadastros, etc...)
+
+*A navegação entre telas pode ser vista [AQUI](https://drive.google.com/file/d/1CFQ55V5iAW8bjkjuJ3xdLTmWDtpsx7fi/view?usp=sharing).*
+
+- Foi criado o arquivo store/authStore.ts com uma estrutura inicial de um store *Zustand*. Este store será utilizado para gerenciar o token de autenticação e o estado do login do usuário.
+- As funcionalidades estão sendo desenvolvidas seguindo o *Feature Branch Workflow*
+- Também criei algumas Issues's como "Configurações iniciais", e PR para integrar as configurações iniciais do *Expo Router* e *Zustand* à branch main utilizando o *Squash and Merge*
+- As features foram desenvolvidas em branches dedicadas (*feat/plant-details, docs/readme-checkup*)
+- *Expo Router* foi configurado como sistema de navegação. O package.json foi ajustado ("main": "expo-router/entry") e o plugin *expo-router* está no app.json
+- O *_layout.tsx* foi criado utilizando *Stack.Navigator* para gerenciar a navegação
+- **Telas navegáveis**:
+    - *index.tsx* (tela de login)
+    - *cadastro.tsx* (tela de cadastro)
+    - *minhasPlantas.tsx* (tela principal, onde é possível visualizar todas as plantas cadastradas)
+    - *detalhesPlanta.tsx* (tela para exibir os detalhes de cada planta)
+- A navegação entre a lista de plantas (*minhasPlantas*) e a tela de detalhes (*detalhePlanta*) foi implementada usando router.push com passagem de parâmetros (*plantID, plantName, plantImageKey*)
+- **Componentes reutilizáveis**:
+    - *PlantCard.tsx* foi criado para representar cada item da lista da tela *minhasPlantas.tsx*, evitando a repetição desse componente
+    - *PlantDetails.tsx* foi criado para encapsular a exibição das informações da planta na tela de detalhes (ainda não constam todas as informações da planta, apenas nome e imagem)
+- Os componentes personalizados recebem dados e configurações via props:
+    - *PlantCard* recebe id, name, imageSource, imageKey, e nextNotification
+    - *PlantDetails* recebe name e imageSource
+- Callbacks:
+    - O componente *PlantCard.tsx*, ao ser pressionado (*TouchableOpacity*), dispara a função *handleCardPress* que utiliza o router para o evento de navegação, passando dados da planta selecionada
+
