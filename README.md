@@ -179,3 +179,4 @@ Nesta etapa foi feita a configuração da estrutura base do aplicativo, no siste
     - *PlantDetails* recebe name e imageSource
 - Callbacks:
     - O componente *PlantCard.tsx*, ao ser pressionado (*TouchableOpacity*), dispara a função *handleCardPress* que utiliza o router para o evento de navegação, passando dados da planta selecionada
+
