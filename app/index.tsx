@@ -1,8 +1,16 @@
 import { View, Text, TextInput, Button, StyleSheet, Pressable } from 'react-native';
-import { Link } from 'expo-router';
+import { Link, useRouter } from 'expo-router';
 import React from 'react';
 
 export default function LoginScreen() {
+    const router = useRouter();
+
+    const handleLogin = () => {
+        // apenas a navegação para a tela de "Minhas Plantas"
+        // ainda não tem a validação de login e autenticação
+        router.push('/minhasPlantas'); 
+    };
+
     return (
         <View style={styles.container}>
         <Text style={styles.title}>Boas vindas!</Text>
@@ -22,7 +30,7 @@ export default function LoginScreen() {
             secureTextEntry
         />
 
-        <Pressable style={styles.button} onPress={() => console.log('Botão "Entrar" pressionado')}>
+        <Pressable style={styles.button} onPress={handleLogin}>
             <Text style={styles.buttonText}>Entrar</Text>
         </Pressable>
 
