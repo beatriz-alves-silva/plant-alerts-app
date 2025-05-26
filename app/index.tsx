@@ -1,4 +1,3 @@
-// app/index.tsx
 import { View, Text, TextInput, Button, StyleSheet, Pressable } from 'react-native';
 import { Link } from 'expo-router';
 import React from 'react';
@@ -74,7 +73,7 @@ export default function LoginScreen() {
         marginBottom: 15,
     },
     buttonText: {
-        color: '#fff',
+        color: '#FEFAE0',
         fontWeight: 'bold',
         fontSize: 16,
     },
